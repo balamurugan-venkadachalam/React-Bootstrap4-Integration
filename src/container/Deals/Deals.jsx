@@ -6,8 +6,7 @@ class Deals extends Component {
     render(){
         return(
             <div>
-            <Jumbotron title="About Us" subtitle="about us" />
-                
+                <Jumbotron title="Deals" subtitle="Deals" />                
             </div>
         );
     }

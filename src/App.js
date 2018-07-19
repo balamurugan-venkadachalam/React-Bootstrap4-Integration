@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Link, Redirect, Route,Switch} from 'react-router-dom';
+import {BrowserRouter, Link, Redirect, Route,Switch} from 'react-router-dom';
 
 import './App.css';
 
@@ -10,9 +10,9 @@ class App extends Component {
     return (
 
     <div className="container-fluid">
-        <Router >
+        <BrowserRouter >
           <Main />
-        </Router>
+        </BrowserRouter>
     </div>
     ); 
   }

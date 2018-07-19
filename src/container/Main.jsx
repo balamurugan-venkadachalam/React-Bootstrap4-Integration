@@ -13,14 +13,18 @@ class Main extends Component {
     render(){
         return(
             <div>
-            <Navbar/> 
+                <Navbar />
+                <Switch> 
+                    <Route path="/test"  exact  render={ ()=> <h2>React developer community</h2> }/>    
+                    <Route path="/deals"  component={Deals} />
+                    <Route path="/about" exact component={About} />
+                    <Route path="/events"  exact component={Events} />
+                    <Route path="/home" exact component={Home} />
+                    <Redirect from="/" to="/home" />
+                </Switch>
 
-                <Route to="/events" exact component={Events} />
-                <Route to="/deals" exact component={Deals} />
-                <Route to="/about" exact component={About} />
-                <Route to="/" exact component={Home} />
 
-            <Footer />
+            <Footer/>
 
             </div>
         );
